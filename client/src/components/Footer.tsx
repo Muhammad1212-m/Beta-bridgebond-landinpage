@@ -1,16 +1,19 @@
 import { Linkedin } from "lucide-react";
+import logoImage from "@assets/9 copy 1 (1)_1758702541630.png";
 
 export default function Footer() {
   return (
     <footer className="bg-muted/50 border-t">
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Logo placeholder */}
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">B</span>
-            </div>
-            <span className="text-xl font-bold text-foreground">bridgebond</span>
+          {/* Logo */}
+          <div className="flex items-center">
+            <img 
+              src={logoImage} 
+              alt="Bridgebond logo"
+              className="h-6 w-auto"
+              data-testid="footer-logo"
+            />
           </div>
 
           {/* Contact and tagline */}
