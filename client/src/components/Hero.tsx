@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
-import appMockupImage from "@assets/Screenshot 2025-09-11 at 3.02.30 PM_1758701034891.png";
+import appMockupImage from "@assets/Group 1000008160_1758706727099.png";
 
 interface HeroProps {
   onCtaClick: () => void;
