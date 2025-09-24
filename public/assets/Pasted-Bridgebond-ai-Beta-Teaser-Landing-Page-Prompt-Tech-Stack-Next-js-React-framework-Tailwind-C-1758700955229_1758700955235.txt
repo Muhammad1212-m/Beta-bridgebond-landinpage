@@ -1,0 +1,109 @@
+Bridgebond.ai Beta Teaser Landing Page — Prompt
+⚙️ Tech Stack
+
+Next.js (React framework)
+
+Tailwind CSS for styling
+
+JavaScript only (no TypeScript)
+
+🎯 Goal
+
+Create a lightweight, mobile-first, conversion-focused landing page that captures user details for Bridgebond.ai’s Early Access Beta (launching in early 2026).
+
+📄 Page Structure
+1. Hero Section (Above the Fold)
+
+Headline:
+“The simple culture connectivity platform for the modern workforce.”
+
+Subheadline:
+“Launching in Early 2026 — Be the first to join the beta.”
+
+Extra line:
+“🚀 Coming Soon” (styled above or below the headline).
+
+App image/mockup (placeholder or asset slot).
+
+CTA Button: “Request Early Access” → scrolls to signup form.
+
+On mobile, show a sticky CTA button at the bottom of the screen.
+
+2. Signup Form (Main Focus)
+
+Fields (with basic validation):
+
+First Name
+
+Last Name
+
+Company
+
+Email (required, validate format)
+
+Phone
+
+CTA Button:
+“Request Beta Invite”
+
+After submission, show confirmation message:
+“Thanks! You’ll be notified as soon as Bridgebond launches.”
+
+Form submission simulated with local state (no backend integration).
+
+3. Teaser Copy Section (Optional Short Line)
+
+Example:
+“Born in hospitality & healthcare, where turnover is highest and connection matters most — Bridgebond helps teams feel seen and stay connected.”
+
+4. Footer
+
+Bridgebond logo (placeholder slot).
+
+Contact Email: hello@bridgebond.ai
+
+Tagline: “Built for frontline teams”
+
+Social: LinkedIn icon only
+
+🎨 Design Guidelines
+
+Primary color: #8BD5FB
+
+Accent colors: white, black.
+
+Font: Inter or DM Sans (via Google Fonts).
+
+Mobile-first design, fully responsive.
+
+Minimal layout, clean typography, generous spacing.
+
+Fast load performance (<1.5s).
+
+Subtle fade-in animations (Framer Motion optional).
+
+🔑 Conversion Best Practices
+
+Keep navigation minimal (no top nav or external links, except footer).
+
+Signup form should be above the fold on desktop and easily accessible on mobile.
+
+Use sticky CTA on mobile for easy access.
+
+📦 Deliverable
+
+A working Next.js project with Tailwind CSS, using JavaScript only.
+
+Single page: LandingPage.jsx
+
+Components separated cleanly:
+
+Hero.jsx
+
+SignupForm.jsx
+
+Teaser.jsx
+
+Footer.jsx
+
+Dummy state handling for form submission (no backend).
