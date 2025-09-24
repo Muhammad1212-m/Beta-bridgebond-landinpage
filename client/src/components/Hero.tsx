@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Rocket } from "lucide-react";
 import appMockupImage from "@assets/Group 1000008160_1758706727099.png";
 
 interface HeroProps {
@@ -17,24 +17,34 @@ export default function Hero({ onCtaClick }: HeroProps) {
 
   return (
     <section className="min-h-screen flex items-center bg-background">
-      <div className="container mx-auto px-6 py-16">
+      <div className="w-full max-w-screen-xl mx-auto px-6 py-16">
+        {/* Desktop centered Coming Soon badge */}
+        <div className="hidden lg:flex justify-center mb-8">
+          <div className="flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full text-lg font-medium animate-pulse" data-testid="text-coming-soon-desktop">
+            <Rocket className="h-5 w-5" />
+            Coming Soon
+          </div>
+        </div>
+        
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="flex justify-center">
-                <div className="flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full text-lg font-medium animate-pulse">
-                  🚀 Coming Soon
+              {/* Mobile Coming Soon badge */}
+              <div className="flex justify-center lg:hidden">
+                <div className="flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full text-lg font-medium animate-pulse" data-testid="text-coming-soon-mobile">
+                  <Rocket className="h-5 w-5" />
+                  Coming Soon
                 </div>
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground text-center lg:text-left">
                 The simple{" "}
                 <span className="text-primary">culture connectivity</span>{" "}
                 platform for the modern workforce.
               </h1>
               
-              <p className="text-xl text-muted-foreground font-medium">
+              <p className="text-xl text-muted-foreground font-medium text-center lg:text-left">
                 Launching in Early 2026 — Be the first to join the beta.
               </p>
             </div>
