@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import SignupForm from "@/components/SignupForm";
 import Teaser from "@/components/Teaser";
@@ -15,6 +16,7 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen">
+      <Header />
       <Hero onCtaClick={handleCTAClick} />
       <Teaser />
       <SignupForm />
