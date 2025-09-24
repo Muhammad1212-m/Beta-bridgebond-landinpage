@@ -22,8 +22,10 @@ export default function Hero({ onCtaClick }: HeroProps) {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                🚀 Coming Soon
+              <div className="flex justify-center lg:justify-start">
+                <div className="flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full text-lg font-medium animate-pulse">
+                  🚀 Coming Soon
+                </div>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
