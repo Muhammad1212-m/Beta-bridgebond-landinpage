@@ -19,11 +19,11 @@ export default function Hero({ onCtaClick }: HeroProps) {
 
   return (
     <section className="min-h-screen flex items-center bg-background">
-      <div className="w-full max-w-screen-xl mx-auto px-6 py-16">
+      <div className="w-full max-w-screen-xl mx-auto px-6 py-2">
         {/* Desktop centered Coming Soon badge */}
         <div className="hidden lg:flex justify-center mb-8">
-          <div className="flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full text-lg font-medium animate-pulse" data-testid="text-coming-soon-desktop">
-            <Rocket className="h-5 w-5" />
+          <div className="flex items-center gap-2 bg-[#E4F6FF] text-black px-6 py-3 rounded-full text-9xl font-medium animate-pulse" data-testid="text-coming-soon-desktop">
+            <Rocket className="h-10 w-10" />
             Coming Soon
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
             <div className="space-y-4">
               {/* Mobile Coming Soon badge */}
               <div className="flex justify-center lg:hidden">
-                <div className="flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full text-lg font-medium animate-pulse" data-testid="text-coming-soon-mobile">
+                <div className="flex items-center gap-2 bg-[#E4F6FF] text-black px-6 py-3 rounded-full text-3xl font-medium animate-pulse" data-testid="text-coming-soon-mobile">
                   <Rocket className="h-5 w-5" />
                   Coming Soon
                 </div>

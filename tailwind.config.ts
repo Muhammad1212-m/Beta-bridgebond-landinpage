@@ -83,7 +83,7 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Inter", "DM Sans", "var(--font-sans)"],
+        sans: ["var(--font-inter)", "var(--font-dm-sans)", "system-ui", "sans-serif"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
       },

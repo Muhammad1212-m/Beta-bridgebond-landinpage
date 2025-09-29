@@ -1,6 +1,6 @@
 import React from "react";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Toaster } from "@/components/ui/toaster";
+// import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 import { Inter, DM_Sans } from "next/font/google";
 import QueryProvider from "./providers";
@@ -31,12 +31,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${dmSans.variable} font-sans antialiased bg-background text-foreground`}>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning className={`${inter.variable} ${dmSans.variable} font-sans antialiased bg-background text-foreground`}>
         <QueryProvider>
           <TooltipProvider>
             {children}
-            <Toaster />
+            {/* <Toaster /> */}
           </TooltipProvider>
         </QueryProvider>
       </body>

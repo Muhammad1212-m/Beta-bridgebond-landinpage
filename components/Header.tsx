@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header style={{ backgroundColor: '#E4F6FF' }} className="border-b border-border/50">
+    <header className=" bg-[#E4F6FF]">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-center">
           <Image 
