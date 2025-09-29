@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from "react";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import SignupForm from "@/components/SignupForm";
-import Teaser from "@/components/Teaser";
-import Footer from "@/components/Footer";
-import MobileCTA from "@/components/MobileCTA";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import SignupForm from "../components/SignupForm";
+import Teaser from "../components/Teaser";
+import Footer from "../components/Footer";
+import MobileCTA from "../components/MobileCTA";
 
 export default function LandingPage() {
   const [ctaClicked, setCTAClicked] = useState(false);

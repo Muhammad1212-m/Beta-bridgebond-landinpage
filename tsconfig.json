@@ -24,24 +24,37 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "client/src/*"
+        "./*"
+      ],
+      "@/components/*": [
+        "components/*"
+      ],
+      "@/lib/*": [
+        "lib/*"
+      ],
+      "@/hooks/*": [
+        "hooks/*"
       ],
       "@shared/*": [
         "shared/*"
-      ],
-      "@assets/*": [
-        "attached_assets/*"
       ]
     },
     "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "lib/**/*.ts",
+    "lib/**/*.tsx",
     ".next/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "client",
+    "server",
+    "vite.config.ts"
   ]
 }
