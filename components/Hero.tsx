@@ -18,11 +18,11 @@ export default function Hero({ onCtaClick }: HeroProps) {
   };
 
   return (
-    <section className="min-h-screen flex items-center bg-background">
+    <section className=" flex  bg-background">
       <div className="w-full max-w-screen-xl mx-auto px-6 py-2">
         {/* Desktop centered Coming Soon badge */}
-        <div className="hidden lg:flex justify-center mb-8">
-          <div className="flex items-center gap-2 bg-[#E4F6FF] text-black px-6 py-3 rounded-full text-9xl font-medium animate-pulse" data-testid="text-coming-soon-desktop">
+        <div className="hidden lg:flex justify-center mb-8 mt-4">
+          <div className="flex items-center gap-2 bg-[#E4F6FF] text-black px-6 py-3 rounded-full text-3xl font-medium animate-pulse" data-testid="text-coming-soon-desktop">
             <Rocket className="h-10 w-10" />
             Coming Soon
           </div>
