@@ -6,6 +6,10 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
+import { db } from "@/lib/firebase";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+
+
 
 interface FormData {
   firstName: string;
@@ -70,22 +74,35 @@ export default function SignupForm() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!validateForm()) {
-      return;
-    }
 
-    setIsLoading(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      setIsLoading(false);
-      setIsSubmitted(true);
-    }, 1000);
-  };
+
+
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  if (!validateForm()) {
+    return;
+  }
+
+  setIsLoading(true);
+
+  try {
+    // 👇 Add form data to Firestore collection "target_email"
+    await addDoc(collection(db, "target_emails"), {
+      ...formData,
+      createdAt: serverTimestamp(),
+    });
+
+    console.log("Form saved to Firestore:", formData);
+    setIsSubmitted(true);
+  } catch (error) {
+    console.error("Error saving form:", error);
+    alert("Something went wrong while submitting the form. Try again!");
+  } finally {
+    setIsLoading(false);
+  }
+};
+
 
   const handleInputChange = (field: keyof FormData, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));

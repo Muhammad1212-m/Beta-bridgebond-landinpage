@@ -24,26 +24,17 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <p className="text-sm text-muted-foreground mb-1">Built for frontline teams</p>
             <a 
-              href="mailto:hello@bridgebond.ai" 
+              href="mailto:info@bridgebond.ai" 
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               data-testid="link-contact-email"
             >
-              hello@bridgebond.ai
+              info@bridgebond.ai
             </a>
           </div>
 
           {/* Social */}
-          <div className="flex items-center gap-4">
-            <a 
-              href="https://linkedin.com/company/bridgebond" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-              data-testid="link-linkedin"
-            >
-              <Linkedin className="w-5 h-5" />
-              <span className="sr-only">LinkedIn</span>
-            </a>
+          <div className="flex text-white items-center gap-4">
+            ...........................
           </div>
         </div>
         
