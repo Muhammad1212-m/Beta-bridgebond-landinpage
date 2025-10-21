@@ -124,10 +124,10 @@ export default function SignupForm() {
             </CardHeader>
 
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-2">
                 {/* First & Last Name */}
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
+                <div className="grid grid-cols-2 gap-2">
+                  <div className="space-y-1">
                     <Label htmlFor="firstName">First Name *</Label>
                     <Input
                       id="firstName"
@@ -140,7 +140,7 @@ export default function SignupForm() {
                     {errors.firstName && <p className="text-sm text-destructive">{errors.firstName}</p>}
                   </div>
 
-                  <div className="space-y-2">
+                  <div className="space-y-1">
                     <Label htmlFor="lastName">Last Name *</Label>
                     <Input
                       id="lastName"
@@ -155,7 +155,7 @@ export default function SignupForm() {
                 </div>
 
                 {/* Company */}
-                <div className="space-y-2">
+                <div className="space-y-1">
                   <Label htmlFor="company">Company *</Label>
                   <Input
                     id="company"
@@ -189,7 +189,7 @@ export default function SignupForm() {
                 />
 
                 {/* Email */}
-                <div className="space-y-2">
+                <div className="space-y-1">
                   <Label htmlFor="email">Email *</Label>
                   <Input
                     id="email"
@@ -203,7 +203,7 @@ export default function SignupForm() {
                 </div>
 
                 {/* Phone */}
-                <div className="space-y-2">
+                <div className="space-y-1">
                   <Label htmlFor="phone">Phone *</Label>
                   <Input
                     id="phone"
