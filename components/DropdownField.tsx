@@ -24,7 +24,7 @@ const DropdownField: React.FC<DropdownFieldProps> = ({
   return (
     <div className="flex flex-col space-y-2 w-full">
       {label && (
-        <Label>
+        <Label className="mt-[6px]">
           {label} {required && <span >*</span>}
         </Label>
       )}
